@@ -64,3 +64,11 @@ body {
     font-size: 14px;
     line-height: 1.5;
   }
+
+  .site-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ccc;
+  }
