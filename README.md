@@ -1,0 +1,1 @@
+Disclaimer: This site is a personal project inspired by the look of Windows 7. It is not affiliated with, endorsed by, or connected to Microsoft Corporation. All trademarks are property of their respective owners.
