@@ -19,135 +19,50 @@
   background-position: center;  /* Center the image */
   }
   
-  /* Header with orange-white gradient */
-  .site-header {
-    text-align: center;
-    padding: 30px 10px;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5e7d0;
-    padding: 20px;
-  }
-  
-  .container {
-    border: 2px solid #500909;
-    background-color: #ffffff;
-    max-width: 700px;
-    margin: 20px auto; /* centers the box horizontally */
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header {
-    background-color: #7e0b0b;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
+    .taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: linear-gradient(
+      rgba(120, 180, 255, 0.4),
+      rgba(50, 100, 180, 0.4)
+    );
+    backdrop-filter: blur(6px); /* Gives glass-like effect */
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-  
-  .header .close {
-    background-color: #660000;
     padding: 0 8px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border: 1px solid white;
+    gap: 8px;
+  }
+
+  .start-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: url('start-icon.png') center/contain no-repeat;
     cursor: pointer;
+    flex-shrink: 0;
   }
-  
-  .content {
-    padding: 5px;
-    color: #000;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .content a {
-    color: #0000ff;
-    text-decoration: underline;
-  }
-  
-  .tagline {
-    font-size: 1.1em;
-    color: #555;
-  }
-  
-  /* Board List Section */
-  .board-list {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 10px;
-    border: 1px solid #cc0000;
-      border: 2px solid #500909;
-    background-color: #fff;
-    color: #600;
-  }
-  
-  .board-heading {
-    background-color: #f3cbb5; /* latte background */
-    border-bottom: 2px solid #cc0000;
-    border-top: 1px solid #cc0000;
-    border-left: 1px solid #cc0000;
-    border-right: 1px solid #cc0000;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-  }
-  
-  .board-heading h2 {
-    font-size: 1.4em;
-    color: #800000;
-    margin: 0;
-  }
-  
-  .board-columns {
+
+  .taskbar-icons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    align-items: center;
+    gap: 12px;
   }
-  
-  .board-category {
-    flex: 1 1 200px;
-  }
-  
-  .board-category strong {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #900;
-  }
-  
-  .board-category ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .board-category li {
-    padding: 2px 0;
-  }
-  
-  .board-category a {
-    text-decoration: none;
-    color: #0645ad;
-  }
-  
-  .board-category a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  /* Footer */
-  .site-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #777;
-    border-top: 1px solid #ccc;
+
+  .taskbar-icon {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
   
 
   
+
 
