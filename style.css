@@ -10,12 +10,14 @@
       margin: 0;
     }
     
-    body {
-      background-image: url('img1.jpg');
-      font-family: sans-serif;
-      line-height: 1.5;
-      color: #000;
-    }
+  body {
+  margin: 0; /* Remove default body margin */
+  height: 100vh; /* Ensure it covers the full viewport height */
+  background-image: url('img1.jpg');
+  background-size: cover;     /* Make image fill the area while preserving aspect ratio */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center;  /* Center the image */
+  }
   
   /* Header with orange-white gradient */
   .site-header {
@@ -148,3 +150,4 @@
   
 
   
+
