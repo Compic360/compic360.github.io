@@ -76,5 +76,39 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Container for all desktop icons */
+.desktop-icons {
+  position: fixed;      /* stays in top-left */
+  top: 20px;            /* distance from top */
+  left: 20px;           /* distance from left */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;            /* space between icons */
+  z-index: 10;          /* on top of wallpaper */
+}
+
+/* Each icon (cube shape) */
+.desktop-icon {
+  width: 64px;          /* cube width */
+  height: 64px;         /* cube height */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.05); /* faint glassy background */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* subtle border */
+  border-radius: 6px;   /* slightly rounded corners */
+  backdrop-filter: blur(4px); /* Aero-like effect */
+  -webkit-backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.desktop-icon:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+
 
 
