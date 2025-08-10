@@ -20,7 +20,7 @@
 </head>
 <body>
 
-<canvas id="pong" width="1600" height="1000"></canvas>
+<canvas id="pong" width="1600" height="900"></canvas>
 
 <script>
 const canvas = document.getElementById("pong");
@@ -76,7 +76,7 @@ function drawCircle(x, y, r, color) {
 // Draw text
 function drawText(text, x, y, color) {
   ctx.fillStyle = color;
-  ctx.font = "45px Arial";
+  ctx.font = "45px Consolas";
   ctx.fillText(text, x, y);
 }
 
